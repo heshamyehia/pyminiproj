@@ -12,6 +12,8 @@ def read_csv_file(file_path, dtypes:dict):
     Returns:
         dict: A dictionary where keys are column names and values are lists of column values.
               Missing values (empty strings) are replaced with None.
+
+
     
     """
     data = {}
