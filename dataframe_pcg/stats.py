@@ -5,6 +5,9 @@ def get_col_max(col:list):
     """
     Compute the maximum value of a numerical column.
 
+
+    
+
     Args:
         col (list): A list of numerical values. `None` values are ignored.
 
