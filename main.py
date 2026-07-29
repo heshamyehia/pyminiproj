@@ -14,9 +14,9 @@ def main():
     # Numeric columns → mean
     # Categorical columns → mode
     # TODO:Generate statistics file
-    
+    df.describe()
     # TODO:Write cleaned data to CSV
     df.to_csv("data/titanic_cleaned.csv")
-    
+
 if __name__ == "__main__":
     main()
