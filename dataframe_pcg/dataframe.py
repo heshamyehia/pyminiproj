@@ -32,6 +32,7 @@ class Dataframe:
         means = []
         medians = []
         modes = []
+        modified=0
 
         for col, values in self.data.items():
             cols.append(col)
@@ -47,12 +48,11 @@ class Dataframe:
                 means.append(None)
                 medians.append(None)
             modes.append(get_col_mode(values))
-
         description = {
             'column': cols,
             'nulls': nulls,
             'max': maxs,
-            'min': mis,
+            'min': mins,
             'mean': means,
             'median': medians,
             'mode': modes,
