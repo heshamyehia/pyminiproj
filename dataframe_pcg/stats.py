@@ -73,7 +73,7 @@ def get_col_median(col:list):
     n = len(sorted_col)
     if n==0:
         return None
-    elif n%2!=0 :
+    elif n%2!=0
         return sorted_col[n//2]
     elif(n%2==0):
         return (sorted_col[n//2]+sorted_col[(n//2)+1])/2
