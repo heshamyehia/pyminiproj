@@ -90,7 +90,7 @@ def write_file(file_path, data:dict):
 
     n_rows = lengths[0]
 
-    with open(file_path, "w", newline="", encoding="utf-8") as f:
+    with open(file_path, "r", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(fieldnames)
 
