@@ -1,5 +1,5 @@
 from dataframe_pcg import Dataframe,stats
-
+import numpy
 
 def main():
     # TODO: Read data
