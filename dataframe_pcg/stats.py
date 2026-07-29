@@ -17,7 +17,7 @@ def get_col_max(col:list):
     max_val = None
     for val in col:
         if val is not None:
-            if max_val is None or val < max_val:
+            if max_val is None or val > max_val:
                 max_val = val
     return max_val
 
