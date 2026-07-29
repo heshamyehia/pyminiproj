@@ -16,10 +16,10 @@ class Dataframe:
         df=cls(dataset, dtypes)
         return df
     #TODO: define count_nulls()
-    def count_nulls(self):
+    def count_nulls(self)
         null_counts = {}
         for col, values in self.data.items():
-            null_count = sum(1 for val in values if val is None)
+            null_count = sum(1 for val in values if val is None
             null_counts[col] = null_count
         return null_counts    
     
@@ -52,7 +52,7 @@ class Dataframe:
             'column': cols,
             'nulls': nulls,
             'max': maxs,
-            'min': mins,
+            'min': mis,
             'mean': means,
             'median': medians,
             'mode': modes,
