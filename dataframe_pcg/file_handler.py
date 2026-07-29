@@ -1,5 +1,7 @@
+import csv
 
-def read_csv_file(file_path, dtypes:dict):
+
+def read_csv_file(file_path, dtypes: dict):
     """
     Read a CSV file and convert each column to the specified data type.
 
@@ -12,7 +14,7 @@ def read_csv_file(file_path, dtypes:dict):
               Missing values (empty strings) are replaced with None.
 
 
-    
+
     """
     data = {}
 
@@ -41,8 +43,7 @@ def read_csv_file(file_path, dtypes:dict):
                 raise ValueError(f"Unsupported data type: {dtype} for column: {col}")
 
     return data
-    
-    
+
 
 def read_dtype(file_path):
     """
@@ -65,8 +66,9 @@ def read_dtype(file_path):
             dtypes[col_name] = col_type
 
     return dtypes
-            
-def write_file(file_path, data:dict):
+
+
+def write_file(file_path, data: dict):
     """
     Write a data dictionary to a CSV file.
 
@@ -100,5 +102,3 @@ def write_file(file_path, data:dict):
                 val = data[col][i]
                 row.append("" if val is None else val)
             writer.writerow(row)
-
-
