@@ -55,7 +55,7 @@ def get_col_mean(col:list):
             sum+=val
             count+=1
     if count==0:
-        return Noe
+        return None
     return sum/count
 
 def get_col_median(col:list):
